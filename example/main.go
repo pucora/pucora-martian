@@ -9,11 +9,11 @@ import (
 	"syscall"
 
 	"github.com/gin-gonic/gin"
-	gologging "github.com/pucora/velonetics-gologging/v2"
-	koanf "github.com/pucora/velonetics-koanf"
-	martian "github.com/pucora/velonetics-martian/v2"
+	gologging "github.com/pucora/pucora-gologging/v2"
+	koanf "github.com/pucora/pucora-koanf"
+	martian "github.com/pucora/pucora-martian/v2"
 	"github.com/pucora/lura/v2/proxy"
-	veloneticsgin "github.com/pucora/lura/v2/router/gin"
+	pucoragin "github.com/pucora/lura/v2/router/gin"
 	"github.com/pucora/lura/v2/transport/http/client"
 	"github.com/pucora/lura/v2/transport/http/server"
 )
@@ -41,10 +41,10 @@ func main() {
 
 	backendFactory := martian.NewBackendFactory(logger, client.DefaultHTTPRequestExecutor(client.NewHTTPClient))
 
-	routerFactory := veloneticsgin.NewFactory(veloneticsgin.Config{
+	routerFactory := pucoragin.NewFactory(pucoragin.Config{
 		Engine:         gin.Default(),
 		Logger:         logger,
-		HandlerFactory: veloneticsgin.EndpointHandler,
+		HandlerFactory: pucoragin.EndpointHandler,
 		ProxyFactory:   proxy.NewDefaultFactory(backendFactory, logger),
 		RunServer:      server.RunServer,
 	})

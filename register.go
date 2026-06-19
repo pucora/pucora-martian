@@ -2,10 +2,10 @@ package martian
 
 import (
 	"github.com/google/martian/parse"
-	"github.com/pucora/velonetics-martian/v2/register"
+	"github.com/pucora/pucora-martian/v2/register"
 )
 
-// Register gets all the modifiers from the velonetics-martian register and registers
+// Register gets all the modifiers from the pucora-martian register and registers
 // them into the martian parser
 func Register() {
 	for k, component := range register.Get() {

@@ -1,4 +1,4 @@
-module github.com/pucora/velonetics-martian/v2
+module github.com/pucora/pucora-martian/v2
 
 go 1.25.3
 
@@ -6,8 +6,8 @@ require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/google/martian v2.1.0+incompatible
 	github.com/google/uuid v1.3.0
-	github.com/pucora/velonetics-gologging/v2 v2.0.0
-	github.com/pucora/velonetics-koanf v1.0.0
+	github.com/pucora/pucora-gologging/v2 v2.0.0
+	github.com/pucora/pucora-koanf v1.0.0
 	github.com/pucora/lura/v2 v2.0.0
 )
 

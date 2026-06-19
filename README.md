@@ -1,20 +1,20 @@
 # Pucora martian
 
-The `velonetics-martian` package integrates the martian project into the Pucora framework.
+The `pucora-martian` package integrates the martian project into the Pucora framework.
 
 ## How to use it
 
-Add your martian DSL definition under the "github.com/pucora/velonetics-martian" namespace of the backend section of the config file
+Add your martian DSL definition under the "github.com/pucora/pucora-martian" namespace of the backend section of the config file
 
 ```
 "extra_config": {
-  "github.com/pucora/velonetics-martian": {}
+  "github.com/pucora/pucora-martian": {}
 }
 ```
 
 More details here: https://github.com/google/martian#modifiers-all-the-way-down
 
-Check the [example](https://github.com/pucora/velonetics-martian/tree/master/example) folder for a complete demo.
+Check the [example](https://github.com/pucora/pucora-martian/tree/master/example) folder for a complete demo.
 
 ## Example
 
@@ -45,7 +45,7 @@ And check the logs of the Pucora: the request modifiers have done their job!
 See how `{"msg":"you rock!"}` was added to the payload.
 
 ```
-[PUCORA] ▶ DEBUG config: {[0xc4201839a0] 3s 3.6µs [] 8000 2  map[github_com/pucora/velonetics-gologging:map[prefix:[PUCORA] stdout:true level:DEBUG syslog:false]] 0s 0s 0s 0s false false 0 250 0s 0s 0s 0s 0s 0s false <nil> true 1}
+[PUCORA] ▶ DEBUG config: {[0xc4201839a0] 3s 3.6µs [] 8000 2  map[github_com/pucora/pucora-gologging:map[prefix:[PUCORA] stdout:true level:DEBUG syslog:false]] 0s 0s 0s 0s false false 0 250 0s 0s 0s 0s 0s 0s false <nil> true 1}
 [PUCORA] ▶ DEBUG Debug enabled
 [PUCORA] ▶ DEBUG Method: GET
 [PUCORA] ▶ DEBUG URL: /__debug/supu

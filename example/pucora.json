@@ -5,7 +5,7 @@
     "cache_ttl": 3600,
     "timeout": "3s",
     "extra_config": {
-        "github_com/pucora/velonetics-gologging": {
+        "github_com/pucora/pucora-gologging": {
             "level": "DEBUG",
             "prefix": "[PUCORA]",
             "syslog": false,
@@ -24,7 +24,7 @@
                     ],
                     "url_pattern": "/users/devopsfaith",
                     "extra_config": {
-                        "github.com/pucora/velonetics-martian": {
+                        "github.com/pucora/pucora-martian": {
                             "fifo.Group": {
                                 "scope": [
                                     "request",
@@ -57,7 +57,7 @@
                         "http://fake-backend"
                     ],
                     "extra_config": {
-                        "github.com/pucora/velonetics-martian": {
+                        "github.com/pucora/pucora-martian": {
                             "static.Modifier": {
                                 "scope": [
                                     "request",
